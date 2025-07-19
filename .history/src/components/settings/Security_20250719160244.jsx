@@ -1,0 +1,21 @@
+import { Lock } from 'lucide-react'
+import SettingSection from './SettingSection'
+import ToggleSwitch from './ToggleSwitch'
+
+
+const Security = () => {
+  const [twoFactor, setTwoFactor]=useState(false)
+  return (
+    <SettingSection icon={Lock} title={"Security"}>
+      <ToggleSwitch
+       label={"two-Factor Authentication"}
+       onToggle={}
+      >
+
+      </ToggleSwitch>
+
+    </SettingSection>
+  )
+}
+
+export default Security
